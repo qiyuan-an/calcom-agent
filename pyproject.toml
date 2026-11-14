@@ -1,0 +1,14 @@
+[project]
+name = "calcom-agent"
+description = "Conversational Cal.com scheduling assistant with local Ollama and Streamlit"
+readme = "README.md"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["httpx>=0.28,<0.29", "python-dotenv>=1.2,<2", "streamlit>=1.50,<2"]
+
+[project.optional-dependencies]
+test = ["pytest>=9,<10"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
